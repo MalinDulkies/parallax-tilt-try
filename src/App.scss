@@ -1,0 +1,102 @@
+//@import '../ReactParallaxTilt.scss';
+
+.parallax-effect-glare-scale {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 500px;
+  //background: #efebdc;
+  background: url('./phones.png');
+  background-size: 250px 500px, cover;
+
+
+  color: white;
+  border: 5px solid black;
+  border-radius: 20px;
+
+  transform-style: preserve-3d;
+
+  .inner-element {
+    margin: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 150px;
+    height: 300px;
+    align-items: center;
+    font-size: 35px;
+    font-style: italic;
+    color: lightgray;
+    transform: translateZ(40px);
+
+    .inner-element-foreground{
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .inner-element-background{
+      bottom: -50px;
+      left: -50px;
+      position: absolute;
+      right: -50px;
+      top: -50px;
+      transform-origin: 50% 50%;
+      transform: translateZ(-50px);
+      z-index: 0;
+      //background: url('./background.jpg');
+    }
+
+  }
+
+  .inner-element2 {
+    margin: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 150px;
+    height: 300px;
+    align-items: center;
+    font-size: 35px;
+    font-style: italic;
+    color: lightgray;
+    transform: translateZ(150px);
+
+    .inner-element-foreground{
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .inner-element-background{
+      bottom: -50px;
+      left: -50px;
+      position: absolute;
+      right: -50px;
+      top: -50px;
+      transform-origin: 50% 50%;
+      transform: translateZ(-50px);
+      z-index: 0;
+      //background: url('./background.jpg');
+    }
+
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+}
+html,body{
+  height: 100%;
+}
